@@ -1,0 +1,71 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.webpage-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.webpage-title {
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.webpage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 3rem; */
+    padding: 2.5rem 0;
+}
+.post {
+    background-color: white;
+    width: 40%;
+    min-width: 360px;
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+.post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.post-date {
+    color: lightgray;
+}
+.post-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+/* class for the image tag on first post */
+.post-image {
+    width: 100%;
+    height: 100%;
+}
+/* id style for posts two and three, so we can set background image for each specifically */
+#post-three {
+    background-image: url("https://www.gstatic.com/earth/social/00_generic_facebook-001.jpg");
+}
+#post-two {
+    background-image: url("https://ichef.bbci.co.uk/news/320/cpsprodpb/31B0/production/_112202721_noirlab2011a-small.jpg");
+}
+/* class for posts that use background image as method to render post image (posts two and three) */
+.post-content-img {
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* class for footer */
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
